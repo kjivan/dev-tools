@@ -7,7 +7,7 @@ if not test -d build
 end
 
 pushd build
-cmake .. -DCMAKE_INSTALL_PREFIX=../install $argv
+cmake .. -DCMAKE_INSTALL_PREFIX=../install -DBUILD_ENV=NATIVE $argv
 
 if test $status -eq 0
     make
