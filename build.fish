@@ -13,7 +13,6 @@ pushd build
 cmake .. -DCMAKE_INSTALL_PREFIX=../install -DBUILD_ENV=NATIVE $argv
 
 set cmake_status $status
-echo $cmake_status
 if test $cmake_status -eq $success
     make
     set make_status $status
