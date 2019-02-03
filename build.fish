@@ -20,7 +20,7 @@ end
 
 popd
 
-if set -q make_status -a $make_status -eq $success
+if not set -q make_status -a $make_status -eq $success
     exit
 else
     false
