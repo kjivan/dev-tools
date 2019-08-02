@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+set name (basename $argv[1] .rs)
+rustc $argv
+./$name
+rm $name
